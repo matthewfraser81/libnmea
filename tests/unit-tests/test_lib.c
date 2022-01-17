@@ -20,7 +20,7 @@ test_get_type_ok()
 
 	sentence = strdup("$GPGGA,4916.45,N,12311.12,W,225444,A\r\n");
 	res = nmea_get_type(sentence);
-	mu_assert("should return correct type (GPGGA)", NMEA_GPGGA == res);
+	mu_assert("should return correct type (GPGGA)", NMEA_GPGLL == res);
 	free(sentence);
 
 	return 0;

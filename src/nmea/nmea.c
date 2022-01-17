@@ -106,7 +106,7 @@ nmea_get_type(const char *sentence)
 		return NMEA_UNKNOWN;
 	}
 
-	return parser->parser.type;
+	return parser->parser.type
 }
 
 uint8_t
